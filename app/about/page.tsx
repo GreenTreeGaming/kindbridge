@@ -86,31 +86,35 @@ export default function About() {
           and create lasting community connections.
         </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {[
-            { name: "Sarvajith Karun", role: "Backend Developer", img: "/team1.png" },
-            { name: "Shubham Panchal", role: "Front-End Developer", img: "/team2.png" },
-            { name: "Shrihan Avilala", role: "Nonprofit Coordinator", img: "/team3.png" },
-            { name: "Rithick Amarnath", role: "Donor Management", img: "/team3.png" },
-          ].map((member) => (
-            <div
-              key={member.name}
-              className="bg-white rounded-2xl shadow-card p-6 flex flex-col items-center transform transition hover:-translate-y-2"
-            >
+       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {[
+          { name: "Sarvajith Karun", role: "Backend Developer", img: "/sarva.jpg" },
+          { name: "Shubham Panchal", role: "Front-End Developer", img: "/shubham.png" },
+          { name: "Shrihan Avilala", role: "Nonprofit Coordinator", img: "/shrihan.jpeg" },
+          { name: "Rithick Amarnath", role: "Donor Management", img: "/rithick.jpeg" },
+        ].map((member) => (
+          <div
+            key={member.name}
+            className="bg-white rounded-2xl shadow-card p-6 flex flex-col items-center transform transition hover:-translate-y-2"
+          >
+            <div className="w-32 h-32 mb-4 overflow-hidden rounded-full">
               <Image
                 src={member.img}
                 alt={member.name}
-                width={120}
-                height={120}
-                className="rounded-full mb-4 object-cover"
+                width={128}
+                height={128}
+                className={`w-full h-full object-cover ${
+                  member.name === "Sarvajith Karun" ? "object-top" : "object-center"
+                }`}
               />
-              <h3 className="font-semibold text-lg text-primary-dark">
-                {member.name}
-              </h3>
-              <p className="text-text-secondary text-sm">{member.role}</p>
             </div>
-          ))}
-        </div>
+            <h3 className="font-semibold text-lg text-primary-dark">{member.name}</h3>
+            <p className="text-text-secondary text-sm">{member.role}</p>
+          </div>
+        ))}
+      </div>
+
+
       </section>
 
       {/* Footer */}

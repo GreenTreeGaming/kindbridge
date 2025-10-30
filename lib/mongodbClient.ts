@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const uri = process.env.MONGODB_URI!;
+const uri = "mongodb+srv://karunsarvajith_db_user:yyp9KWMP5MSFmA64@cluster1.fyqcg2f.mongodb.net/?retryWrites=true&w=majority";
 if (!uri) throw new Error("Please add MONGODB_URI to .env.local");
 
 const options = {};
