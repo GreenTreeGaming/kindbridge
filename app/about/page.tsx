@@ -12,8 +12,8 @@ export default function About() {
           </h1>
           <p className="text-lg text-text-secondary">
             KindBridge bridges generosity with need. We help donors,
-            nonprofits, and volunteers work together through smart, AI-powered
-            matching — ensuring every donation makes the biggest possible impact.
+            nonprofits, and volunteers work together through smart
+            matching by ensuring every donation makes the biggest possible impact.
           </p>
           <p className="text-md text-text-secondary">
             Built with transparency, accessibility, and community in mind, we’re
@@ -45,7 +45,7 @@ export default function About() {
                 Empower Generosity
               </h3>
               <p className="text-text-secondary">
-                We make it easy for donors to give meaningfully — connecting
+                We make it easy for donors to give meaningfully by connecting
                 individual acts of kindness with real community needs.
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function About() {
               </h3>
               <p className="text-text-secondary">
                 Nonprofits can clearly express their needs, update capacities,
-                and get matched with donors who can help — in seconds.
+                and get matched with donors who can help in seconds.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export default function About() {
                 Scale Social Impact
               </h3>
               <p className="text-text-secondary">
-                By combining data, compassion, and AI, we reduce waste and make
+                By combining data and compassion we reduce waste and make
                 generosity measurable, efficient, and impactful.
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function About() {
           { name: "Sarvajith Karun", role: "Backend Developer", img: "/sarva.jpg" },
           { name: "Shubham Panchal", role: "Front-End Developer", img: "/shubham.png" },
           { name: "Shrihan Avilala", role: "Nonprofit Coordinator", img: "/shrihan.jpeg" },
-          { name: "Rithick Amarnath", role: "Donor Management", img: "/rithick.jpeg" },
+          { name: "Rithick Amarnath", role: "Donor Management", img: "/rithick2.png" },
         ].map((member) => (
           <div
             key={member.name}
@@ -116,20 +116,6 @@ export default function About() {
 
 
       </section>
-
-      {/* Footer */}
-      <footer className="w-full bg-primary text-white py-8 mt-10">
-        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-sm">
-            © {new Date().getFullYear()} DonationOptimizer. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm">
-            <a href="/" className="hover:text-accent transition">Home</a>
-            <a href="/contact" className="hover:text-accent transition">Contact</a>
-            <a href="/privacy" className="hover:text-accent transition">Privacy</a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }

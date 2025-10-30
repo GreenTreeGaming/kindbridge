@@ -50,20 +50,6 @@ export default function Contact() {
           className="rounded-2xl shadow-md mx-auto"
         />
       </section>
-
-      {/* Footer */}
-      <footer className="w-full bg-primary text-white py-8 mt-auto">
-        <div className="max-w-6xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-sm">
-            © {new Date().getFullYear()} DonationOptimizer. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm">
-            <a href="/" className="hover:text-accent transition">Home</a>
-            <a href="/about" className="hover:text-accent transition">About</a>
-            <a href="/privacy" className="hover:text-accent transition">Privacy</a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
